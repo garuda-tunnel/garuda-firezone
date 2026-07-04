@@ -1,4 +1,4 @@
-FROM firezone/firezone:0.7.30
+FROM firezone/firezone:0.7.36
 
 RUN set -eux; \
     printf '%s\n' \
