@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/garuda-tunnel/firezone-internal/compare/v1.2.0...v1.3.0) (2026-08-28)
+
+
+### Features
+
+* **firezone:** raise MAX_DEVICES_PER_USER to the upstream ceiling ([#24](https://github.com/garuda-tunnel/firezone-internal/issues/24)) ([dfb19aa](https://github.com/garuda-tunnel/firezone-internal/commit/dfb19aa9b4f9dd40cf7cd2af2127c8fd2f795d32))
+
 ## [1.2.0](https://github.com/garuda-tunnel/firezone-internal/compare/v1.1.0...v1.2.0) (2026-06-24)
 
 
