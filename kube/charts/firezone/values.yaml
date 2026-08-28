@@ -20,6 +20,14 @@ wgListenPort: 51620
 # `:nxdomain url=https://ping.firez.one` connectivity-check error in the
 # firezone container logs because that endpoint has no public A/AAAA record.
 telemetryEnabled: false
+# Firezone MAX_DEVICES_PER_USER. Upstream (firezone 0.7.x, fz_http) defaults to
+# 10 and hard-validates 0..100 in Config.Definitions; 100 is therefore the
+# maximum reachable without patching the application image. Garuda deployments
+# are small private topologies where the 10-device cap is the only thing users
+# ever hit, so the chart opts into the upstream ceiling. Not threaded through
+# the Terraform module on purpose -- same treatment as telemetryEnabled: an
+# opinionated chart-level constant, not a per-stand knob.
+maxDevicesPerUser: 100
 # Required: consumer module supplies via var.gateway_ref. Both empty
 # strings combined with the schema's minLength fail fast.
 gatewayRef:

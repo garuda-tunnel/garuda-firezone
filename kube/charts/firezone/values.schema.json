@@ -32,6 +32,7 @@
     "wireguardIpv6Masquerade": { "type": "boolean" },
     "wgListenPort":     { "type": "integer", "minimum": 1, "maximum": 65535 },
     "telemetryEnabled": { "type": "boolean" },
+    "maxDevicesPerUser": { "type": "integer", "minimum": 0, "maximum": 100 },
     "gatewayRef": {
       "type": "object",
       "additionalProperties": false,

@@ -24,6 +24,7 @@ stringData:
   WIREGUARD_PORT: "51620"
   PHOENIX_SECURE_COOKIES: "true"
   TELEMETRY_ENABLED: "false"
+  MAX_DEVICES_PER_USER: "100"
   WIREGUARD_IPV4_MASQUERADE: "false"
   WIREGUARD_IPV6_MASQUERADE: "false"
   GUARDIAN_SECRET_KEY: "fixture-guardian"
@@ -100,7 +101,7 @@ spec:
         app.kubernetes.io/part-of: garuda
         garuda.managed-by: helm
       annotations:
-        checksum/env-secret: f74094ed92c2d250b3cfbb400df85dfc86157dc3317a488f279040473ebb6470
+        checksum/env-secret: 6e903760aaab46ca687f9966327a2ec1c3485c9a4d1ee68efb6182e1b02d4555
     spec:
       restartPolicy: Always
       # Match the existing docker-compose stack's sysctls. All three are
